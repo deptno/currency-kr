@@ -1,6 +1,6 @@
 import * as currency from 'currency-formatter';
 
-interface KRW {
+export interface KRW {
     원(amount: number): string;
     십원(amount: number): string;
     백원(amount: number): string;
