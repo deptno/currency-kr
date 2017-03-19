@@ -33,3 +33,4 @@ export interface KRW {
     t100(amount: number): string;
     t1000(amount: number): string;
 }
+export default KRW;
