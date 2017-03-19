@@ -2,8 +2,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "commonjs",
-    "target": "es5",
-    "declaration": true
+    "target": "es5"
   },
   "exclude": [
     "node_modules",
