@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-- 'node'
+- node
 cache:
   yarn: true
   directories:
   - node_modules
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
 install:
 - yarn
 script:
@@ -15,10 +15,12 @@ script:
 notifications:
   email: false
   slack:
+    secure: jJ20pmu2J41Y2LuJNVIJgAPkE0uWUWj7rv36+3QB8B03Gu8B2aAnaz0ujxQJLhjSHCjyRUc7oQb2jiqSshUKebVDGG+f8INZ1BmNkhmlaQ9r5eVwtuuQifZLb1j9HVB0pVfHyiD6b4k/spUkkytD3xIp92jed7/M4q+KmvncR2bGeLEd8MLKR5a6oW+hnaAk9SzS4+uy3HcmOeRPajlZojQ42XYg0SohnDDbXwNh3I18gXpm0udckiSdXRPc2bwvZfqKEJhGru809V4yNA3XEgwCyCKHg2Qpv+QQpc6sNkuCVrMQ1acQ9m9j0AXfHbRm60qdxnNGeKACGH0+1rY/YiiDd4ToIQkZdlt4liJN117623KqEAPTOIhpEixYf1gCHcU1bftfLUxZmIIaQeIl5AnxGEpzxTcdD5Sm9ZXu3F/CFIZec2b+FVYT8+SrNgxn45aXBd/J9zaIuOujOSY2MWBJdpHD/xfcJ0jJmgba1Z5ozRd8BIxW9PqxF1s60qPBPWZogVvNgvy7DmVYQUDTuwoXp4e3F7qPucRd/yYoDf/d+JV2PGl2RbyxHtZ8qG0SDveg38HOhDRk8aa6jphdJ+FkqksV6Aw63zZgEN1+7Q/g7vZWXlhtWOyc+Xj36NL7fjIeRWVTDR93fWvTGVuDhTwyXtX1keyp7Wk2tAH3U/g=
 deploy:
   provider: npm
   email: deptno@gmail.com
   skip_cleanup: true
   api_key:
+    secure: g7jEJNDLS+XIo1sHAuCw5tMKFsf2FuEz6ekJvtFWiyHoudDsWis1OZUY+lT+NLCHwmxk18rScOiteeCjCUIZ+PhwjuwAmYQFxgMrFKOd2qHxoz0itRZbM/Jdx3O9F0+VOy4XCJ4AD2HsQCTqhkteSkvvHHMTb/kubk4ZJCfG2NsZ3/jqGUewSdeqDbq0I9lAVMKYjWIfCGWPKwdCHBnV9jJPYDlnbdKxR/ccJL51ygPHe5NfeUM7ujoWF/5j4iunegRyOb6tWYBc7k290uPmhLAU8Duig6K7ADj/axVSORnCJge+iKru2FkXro1hfOJ81LgbnMTEFE32cBrDJPb9qIyALOOg7Llh/2ThDqiUE7AdntWPjW4/q0f9RuylrX1uN/BvQXE7wjEYUkTB+rituccECbEgMH3jByFRELhF7SXc3QUrOMwXzfuQEFr9cbd5kqQG4XAWdPEK+GXaTrfPIlvhLgeeONOLyx60s5RH15npJsUF1fSLKS2T2qaA84+edx6tHtZtJlcIPHCCvWb3ipFXpkLoaFg3RNfUivDBi+gcqJoo+jaPHiUgmrfnOZo28z4JsBRjZNrSzoelUOEbGjK08ZoPS8Mr8TB/MDG8njn79Mtcw+cqfFpWkVFIoJulWgcinEZoc37XyPhwTUqDJtECQikuGCDn/e/voFLQJZM=
   on:
     tags: true

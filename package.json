@@ -4,6 +4,7 @@
   "description": "한국 통화, 한글단위 원",
   "main": "index.js",
   "scripts": {
+    "compile": "tsc",
     "test": "jest --watch"
   },
   "repository": {
