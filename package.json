@@ -1,6 +1,6 @@
 {
   "name": "currency-kr",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "한국 통화, 한글단위 원",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
