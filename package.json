@@ -1,8 +1,8 @@
 {
   "name": "currency-kr",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "한국 통화, 한글단위 원",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "compile": "tsc",
     "test": "jest --watch"
