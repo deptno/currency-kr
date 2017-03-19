@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+- 'node'
+cache:
+  yarn: true
+  directories:
+  - node_modules
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+install:
+- yarn
+script:
+- yarn compile
+notifications:
+  email: false
+  slack:
+deploy:
+  provider: npm
+  email: deptno@gmail.com
+  skip_cleanup: true
+  api_key:
+  on:
+    tags: true
