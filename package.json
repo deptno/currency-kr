@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/deptno/currency-kr#readme",
   "devDependencies": {
+    "@types/jest": "^19.2.2",
     "jest": "^19.0.2",
     "ts-jest": "^19.0.2",
     "typescript": "^2.2.1"
