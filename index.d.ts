@@ -31,3 +31,5 @@ export function t(amount: number): string;
 export function t10(amount: number): string;
 export function t100(amount: number): string;
 export function t1000(amount: number): string;
+
+type Amount = number|string
