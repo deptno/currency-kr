@@ -1,6 +1,5 @@
-# currency-won
-[![Build Status](https://travis-ci.org/deptno/currency-kr.svg?branch=master)](https://travis-ci.org/deptno/currency-kr)
-
+# currency-kr [![Build Status](https://travis-ci.org/deptno/currency-kr.svg?branch=master)](https://travis-ci.org/deptno/currency-kr)
+[![npm](https://img.shields.io/npm/dt/currency-kr.svg?style=for-the-badge)](https://www.npmjs.com/package/currency-kr)
 한국 통화
 
 ## Install
